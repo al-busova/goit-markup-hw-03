@@ -7,6 +7,7 @@
   --main-font-size: 16px;
   --margin-right-item: 30px;
   --margin-right-nav: 50px;
+  --padding-section: 94px;
 }
 body {
   color: var(--main-textcolor);
@@ -20,14 +21,11 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-right: 0;
 }
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -36,7 +34,8 @@ p {
   width: 1200px;
   /* outline: 2px solid #188ce8; */
   margin: 0 auto;
-  padding: 94px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
@@ -63,8 +62,6 @@ p {
 }
 .top-page .container {
   display: flex;
-  padding-top: 0;
-  padding-bottom: 0;
   align-items: center;
 }
 .logo {
@@ -130,14 +127,13 @@ p {
 /* footer */
 .bottom-page {
   background-color: var(--main-bgcolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .bottom-page .logo {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
-}
-.bottom-page .container {
-  padding: 60px 15px;
 }
 .geoloc-contacts .link {
   display: block;
@@ -160,14 +156,12 @@ p {
 /* PAGE STUDIO */
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--main-bgcolor);
-}
-.hero .container {
-  padding-top: 200px;
-  padding-top: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -179,7 +173,7 @@ p {
 .btn-order {
   display: inline-block;
   min-width: 200px;
-  padding: 10px 32px;
+  padding: 10px 30px;
   color: #ffffff;
   background-color: var(--akcent-color);
   font-family: inherit;
@@ -197,8 +191,11 @@ p {
   background-color: #188ce8;
 }
 /* sections peculiarities and work */
-.peculiarities {
-  margin-bottom: 94px;
+.peculiarities,
+.workers,
+.portfolio {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 .peculiarities .wrapper {
   display: flex;
@@ -228,6 +225,9 @@ p {
   line-height: 1.17;
   text-align: center;
 }
+.work {
+  padding-bottom: var(--padding-section);
+}
 .work .wrapper {
   display: flex;
   margin-right: -1 * (var(--margin-right-item));
@@ -242,6 +242,7 @@ p {
 }
 .worker-item {
   margin-right: var(--margin-right-item);
+  flex-basis: calc((100% -120px) / 4);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   overflow: hidden;
   border-radius: 4px;
@@ -273,9 +274,6 @@ p {
   padding-bottom: 30px;
 }
 /* PAGE PORTFOLIO */
-.portfolio {
-  background-color: #ffffff;
-}
 .wrapper-btn {
   display: flex;
   justify-content: center;
