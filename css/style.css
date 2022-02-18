@@ -340,9 +340,9 @@ img {
 /* .item-project:not(:nth-child(3n)) {
   margin-right: var(--margin-right-item);
 } */
-/* .item-project:not(:nth-last-child(-n + 3)) {
+.item-project:not(:nth-last-child(-n + 3)) {
   margin-bottom: var(--margin-right-item);
-} */
+}
 .wrapper-dec-project {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
